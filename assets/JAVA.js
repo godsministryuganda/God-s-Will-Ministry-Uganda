@@ -12,26 +12,58 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Remitly Recipient Information
+const remitlyRecipient = {
+    name: 'Ssebuliba Charles',
+    country: 'UGANDA',
+    city: 'MITYANA',
+    phone: '+256 768 170 144',
+    address: 'MARKET STREET',
+    delivery: 'MOBILE MONEY',
+    wallet: 'MTN MOBILE MONEY'
+};
+
 // Donation amount functions - Remitly Integration
 function openRemitly(amount) {
+    // Store amount in session for reference
+    sessionStorage.setItem('donationAmount', amount);
+    
+    // Create instruction message
     const recipientInfo = `
-💚 REMITLY DONATION GUIDE 💚
+✨ DONATION INSTRUCTIONS - PLEASE READ ✨
 
-Please send $${amount} USD to:
+You're about to send $${amount} USD to God's_will_ministry Uganda
 
-📝 Names: Ssebuliba Charles
-🌍 Country: UGANDA
-🏙️ City: MITYANA
-📞 Phone: +256 768 170 144
-📍 Address: MARKET STREET
-🚚 Delivery: MOBILE MONEY
-💰 Wallet: MTN MOBILE MONEY
+📝 RECIPIENT DETAILS (Copy & paste in Remitly):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Full Name: Ssebuliba Charles
+Country: UGANDA
+City: MITYANA
+Phone: +256 768 170 144
+Address: MARKET STREET
+Delivery Method: MOBILE MONEY
+Mobile Wallet: MTN MOBILE MONEY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEPS:
+1️⃣ Click OK to open Remitly
+2️⃣ Enter amount: $${amount}
+3️⃣ Paste the recipient details above
+4️⃣ Complete payment
+5️⃣ Your donation reaches orphans in Mityana! 💚
 
 Thank you for supporting God's_will_ministry Uganda! 🇺🇬
     `;
     
     alert(recipientInfo);
+    
+    // Open Remitly in new tab
     window.open('https://www.remitly.com/app/send', '_blank');
+    
+    // Show success message
+    setTimeout(() => {
+        console.log('Opened Remitly for $' + amount + ' donation');
+    }, 500);
 }
 
 function openRemitlyCustom() {
@@ -39,7 +71,7 @@ function openRemitlyCustom() {
     if (amount && amount > 0) {
         openRemitly(amount);
     } else {
-        alert('Please enter a valid donation amount');
+        alert('Please enter a valid donation amount (e.g., 50)');
     }
 }
 
@@ -57,8 +89,35 @@ function donateAmount() {
     }
 }
 
+// Quick donate buttons - improved with direct links
+function quickDonate(amount) {
+    // Show donation info and open Remitly
+    const recipientInfo = `
+💚 DONATE $${amount} USD TO GOD'S WILL MINISTRY UGANDA 💚
+
+RECIPIENT: Ssebuliba Charles
+PHONE: +256 768 170 144
+COUNTRY: UGANDA
+CITY: MITYANA
+
+Quick Steps:
+1. Click OK → Remitly opens
+2. Enter Amount: $${amount}
+3. Select Recipient Type: Mobile Money
+4. Country: UGANDA
+5. Phone Number: +256 768 170 144
+6. Name: Ssebuliba Charles
+7. Complete Payment
+
+Your donation changes lives! Every dollar feeds, educates, and heals an orphan. 🙏
+    `;
+    
+    alert(recipientInfo);
+    window.open('https://www.remitly.com/app/send', '_blank');
+}
+
 // Contact form submission
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
+document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
     e.preventDefault();
     
     const name = this.querySelector('input[type="text"]').value;
