@@ -45,10 +45,10 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Our Mission</h3>
-                    <p>God's_will_ministry Uganda is dedicated to providing comprehensive care, protection, and support to orphaned and vulnerable children in Mityana District. We create safe environments, ensure quality education, provide healthcare, and offer emotional support to help orphans thrive and build hopeful futures.</p>
+                    <p>God's_will_ministry Uganda is dedicated to providing comprehensive care, protection, and support to orphaned and vulnerable children in Mityana District. We create safe environm[...]
                     
                     <h3>Our Vision</h3>
-                    <p>A Mityana District where every orphaned child has access to shelter, nutrition, education, healthcare, and unconditional love—enabling them to grow into confident, healthy, and contributing members of society.</p>
+                    <p>A Mityana District where every orphaned child has access to shelter, nutrition, education, healthcare, and unconditional love—enabling them to grow into confident, healthy, an[...]
                     
                     <h3>Our Core Values</h3>
                     <ul class="values-list">
@@ -362,19 +362,19 @@
                 <div class="program-card">
                     <img src="assets/IMG-20260613-WA0041.jpg" alt="Safe Shelter Program">
                     <h3>Safe Shelter & Care Homes</h3>
-                    <p>We provide secure, loving homes for orphaned children who have no guardians. Our care homes offer safe shelter, nutritious meals, hygiene facilities, and a family-like environment where children feel protected and cared for.</p>
+                    <p>We provide secure, loving homes for orphaned children who have no guardians. Our care homes offer safe shelter, nutritious meals, hygiene facilities, and a family-like environme[...]
                     <a href="#" class="learn-more">Learn More →</a>
                 </div>
                 <div class="program-card">
                     <img src="assets/IMG-20260613-WA0061.jpg" alt="Education for Orphans">
                     <h3>Quality Education for Orphans</h3>
-                    <p>Every orphan in our care attends school with full support—tuition, uniforms, books, and school supplies. We ensure quality education so orphans can pursue their dreams and break the cycle of poverty.</p>
+                    <p>Every orphan in our care attends school with full support—tuition, uniforms, books, and school supplies. We ensure quality education so orphans can pursue their dreams and bre[...]
                     <a href="#" class="learn-more">Learn More →</a>
                 </div>
                 <div class="program-card">
                     <img src="assets/IMG-20260613-WA0062.jpg" alt="Healthcare Program">
                     <h3>Comprehensive Healthcare</h3>
-                    <p>Orphans receive regular medical check-ups, vaccinations, nutrition support, and mental health counseling. We partner with health centers to ensure every orphan grows up healthy and strong.</p>
+                    <p>Orphans receive regular medical check-ups, vaccinations, nutrition support, and mental health counseling. We partner with health centers to ensure every orphan grows up healthy [...]
                     <a href="#" class="learn-more">Learn More →</a>
                 </div>
                 <div class="program-card">
@@ -410,28 +410,28 @@
                 <div class="donate-card">
                     <h3>One-Time Donation</h3>
                     <p>Make an immediate impact with a single contribution to our programs</p>
-                    <a href="https://www.remitly.com/app/send" target="_blank" class="donate-btn">Send via Remitly 💳</a>
+                    <button onclick="quickDonate(50)" class="donate-btn">Send via Remitly 💳</button>
                 </div>
                 <div class="donate-card featured">
                     <div class="badge">Most Popular</div>
                     <h3>Monthly Giving</h3>
                     <p>Become a sustaining member and help us plan long-term programs for Mityana</p>
-                    <a href="https://www.remitly.com/app/send" target="_blank" class="donate-btn primary">Subscribe Monthly via Remitly 💳</a>
+                    <button onclick="quickDonate(100)" class="donate-btn primary">Subscribe Monthly via Remitly 💳</button>
                 </div>
                 <div class="donate-card">
                     <h3>Sponsor an Orphan</h3>
                     <p>Directly support an orphan's complete care including shelter, education, healthcare, and nutrition</p>
-                    <a href="https://www.remitly.com/app/send" target="_blank" class="donate-btn">Sponsor Now 💚</a>
+                    <button onclick="quickDonate(150)" class="donate-btn">Sponsor Now 💚</button>
                 </div>
             </div>
             <div class="donation-amounts">
                 <h4>Make Your Impact - Quick Donation Amounts:</h4>
                 <div class="amount-buttons">
-                    <button class="amount-btn" onclick="openRemitly(10)">$10 USD</button>
-                    <button class="amount-btn" onclick="openRemitly(25)">$25 USD</button>
-                    <button class="amount-btn" onclick="openRemitly(50)">$50 USD</button>
-                    <button class="amount-btn" onclick="openRemitly(100)">$100 USD</button>
-                    <button class="amount-btn" onclick="openRemitly(250)">$250 USD</button>
+                    <button class="amount-btn" onclick="quickDonate(10)">$10 USD</button>
+                    <button class="amount-btn" onclick="quickDonate(25)">$25 USD</button>
+                    <button class="amount-btn" onclick="quickDonate(50)">$50 USD</button>
+                    <button class="amount-btn" onclick="quickDonate(100)">$100 USD</button>
+                    <button class="amount-btn" onclick="quickDonate(250)">$250 USD</button>
                     <input type="number" id="customAmount" placeholder="Custom amount (USD)" class="custom-input">
                     <button class="amount-btn primary" onclick="openRemitlyCustom()">Send via Remitly</button>
                 </div>
@@ -497,7 +497,7 @@
                     </div>
                 </div>
                 <div class="donation-note">
-                    <p><strong>✅ Note:</strong> God's_will_ministry Uganda is a registered non-profit organization dedicated to orphan care. All donations go directly to caring for vulnerable orphaned children. <strong>100% transparency in fund usage.</strong> Every shilling received helps provide shelter, education, healthcare, and love to orphaned children.</p>
+                    <p><strong>✅ Note:</strong> God's_will_ministry Uganda is a registered non-profit organization dedicated to orphan care. All donations go directly to caring for vulnerable orphan[...]
                 </div>
                 
                 <!-- Bank Transfer Section -->
@@ -534,7 +534,7 @@
                             </div>
                         </div>
                         <div class="bank-transfer-note">
-                            <p><strong>💚 International Donors:</strong> Use the SWIFT code for international bank transfers. Specify "God's_will_ministry Uganda Orphan Care" in the transfer description for tracking purposes.</p>
+                            <p><strong>💚 International Donors:</strong> Use the SWIFT code for international bank transfers. Specify "God's_will_ministry Uganda Orphan Care" in the transfer descrip[...]
                             <a href="https://www.centenarybank.co.ug/swift-transfers" target="_blank" class="bank-help-link">Learn more about international transfers →</a>
                         </div>
                     </div>
@@ -594,7 +594,7 @@
                                     <a href="https://www.remitly.com/app/send" target="_blank" class="payment-badge other" title="Other payment options">💳 Other Cards</a>
                                 </div>
                             </div>
-                            <a href="https://www.remitly.com/app/send" target="_blank" class="visa-donate-btn">Donate Now via Visa Card 💳</a>
+                            <button onclick="quickDonate(100)" class="visa-donate-btn">Donate Now via Visa Card 💳</button>
                             <p class="visa-guarantee">✅ Your donation is secure and goes directly to God's_will_ministry Uganda</p>
                         </div>
                     </div>
@@ -613,7 +613,7 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p>"I lost both my parents when I was 7. God's_will_ministry Uganda took me in and gave me a home filled with love. Now I'm in school, healthy, and I have hope for my future. I want to become a nurse."</p>
+                    <p>"I lost both my parents when I was 7. God's_will_ministry Uganda took me in and gave me a home filled with love. Now I'm in school, healthy, and I have hope for my future. I wan[...]
                     <div class="testimonial-author">
                         <strong>David Mukasa</strong>
                         <span>Orphan, Age 14</span>
@@ -621,7 +621,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p>"My husband passed away and I couldn't provide for my children alone. God's_will_ministry Uganda supported my kids through their care programs. They're thriving and I'm so grateful."</p>
+                    <p>"My husband passed away and I couldn't provide for my children alone. God's_will_ministry Uganda supported my kids through their care programs. They're thriving and I'm so grate[...]
                     <div class="testimonial-author">
                         <strong>Prossy Nakandi</strong>
                         <span>Mother of 2 Orphans</span>
@@ -629,7 +629,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p>"Before coming to God's_will_ministry Uganda's care home, I didn't know I had a future. Now I'm in secondary school, I have friends, and caregivers who truly love me. This place is my family."</p>
+                    <p>"Before coming to God's_will_ministry Uganda's care home, I didn't know I had a future. Now I'm in secondary school, I have friends, and caregivers who truly love me. This place[...]
                     <div class="testimonial-author">
                         <strong>Anita Naluwooza</strong>
                         <span>Orphan, Age 16</span>
@@ -637,7 +637,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p>"As a caregiver at God's_will_ministry Uganda, I see daily miracles. The orphans' smiles, their progress in school, their newfound confidence—this work is so rewarding. These children deserve all our love."</p>
+                    <p>"As a caregiver at God's_will_ministry Uganda, I see daily miracles. The orphans' smiles, their progress in school, their newfound confidence—this work is so rewarding. These [...]
                     <div class="testimonial-author">
                         <strong>Mrs. Juliana Ssenfuma</strong>
                         <span>Care Home Caregiver</span>
@@ -645,7 +645,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p>"We lost our son and his wife. God's_will_ministry Uganda helps us support our three grandchildren who are now orphans. The financial help and emotional support mean everything to us."</p>
+                    <p>"We lost our son and his wife. God's_will_ministry Uganda helps us support our three grandchildren who are now orphans. The financial help and emotional support mean everything [...]
                     <div class="testimonial-author">
                         <strong>Mr. & Mrs. Lubega</strong>
                         <span>Grandparents of Orphans</span>
@@ -653,7 +653,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p>"I sponsored an orphan through God's_will_ministry Uganda. Seeing the photos and updates of little Samuel thriving in school and in a safe home has been the most fulfilling experience of my life."</p>
+                    <p>"I sponsored an orphan through God's_will_ministry Uganda. Seeing the photos and updates of little Samuel thriving in school and in a safe home has been the most fulfilling expe[...]
                     <div class="testimonial-author">
                         <strong>Jennifer Collins</strong>
                         <span>Orphan Sponsor from USA</span>
@@ -734,7 +734,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h5>God's_will_ministry Uganda </h5>
-                    <p>A compassionate organization dedicated to providing comprehensive care, protection, and support to orphaned children in Mityana District, Uganda. Together, we give orphans hope, dignity, and a brighter future.</p>
+                    <p>A compassionate organization dedicated to providing comprehensive care, protection, and support to orphaned children in Mityana District, Uganda. Together, we give orphans hope,[...]
                 </div>
                 <div class="footer-section">
                     <h5>Quick Links</h5>
@@ -769,5 +769,3 @@
     <script src="assets/JAVA.js"></script>
 </body>
 </html>
-
-
